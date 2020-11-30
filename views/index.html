@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-family: 40px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+        body {
+            text-align: center;
+            background-color: tan;
+        }
+        form {
+            background: #fafafa;
+            width: 450px;
+            height: auto;
+            margin: 50px auto 50px auto;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>SUBIR UN ARCHIVO</h1>
+    <form action="/files" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="inputArch">Adjunte un archivo txt:</label>
+          <input type="file" class="form-control-file" name="archivo" id="inputArch"  placeholder="Seleccione Archivo">
+        </div>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-block btn-primary ">Enviar</button>
+    </form>
+</div>
+</body>
+</html>
